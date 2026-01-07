@@ -1,5 +1,3 @@
-#this is for testing purpose
-this_is_invalid_python !!!!
 
 import os
 from flask import Flask, request, redirect, render_template
