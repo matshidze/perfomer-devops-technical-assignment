@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-config
+  namespace: performer
+data:
+  prometheus.yml: |
+    global:
+      scrape_interval: 5s
+
+    scrape_configs:
+      - job_name: "flask_web"
+        metrics_path: /metrics
+        static_configs:
+          - targets: ["web.performer.svc.cluster.local:80"]

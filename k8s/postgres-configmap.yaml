@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: performer
+data:
+  POSTGRES_USER: performeruser
+  POSTGRES_DB: appdb
