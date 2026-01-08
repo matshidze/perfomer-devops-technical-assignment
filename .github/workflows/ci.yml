@@ -24,7 +24,7 @@ jobs:
       - name: Lint (ruff)
         run: |
           ruff check app
-
+gi
   build:
     runs-on: ubuntu-latest
     steps:
