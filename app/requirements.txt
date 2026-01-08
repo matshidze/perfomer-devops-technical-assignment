@@ -4,4 +4,3 @@ SQLAlchemy==2.0.25
 prometheus-flask-exporter==0.23.0
 pytest==8.0.0
 ruff==0.6.1
-bandit==1.7.9
